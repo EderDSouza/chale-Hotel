@@ -8,12 +8,21 @@ body{
     background:#fff url(../image/bg.png);
     margin: 15px;
 }
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 header{
     width: 100%;
     background: #ede9cc;
-    
+    min-width: 750px;
+    max-width: 1180px;
 }
+    
 
 div#containerTopo{
     position: relative;
@@ -45,9 +54,46 @@ div#topoMenuLateral{
     
 }
 
-img.imagemPrincipal{
-    position: fixed;
+div#localizacao{
+    text-align: center;
+    margin-top: 25px;
+    border-top: 1px solid #b5ab56;
+    border-bottom: 1px solid #b5ab56;
+    width: 85%;
+    margin-left: 40px;
+    padding: 10px;
 }
+div#localizacao > span{
+    font-size: 0.9em;
+    padding: 10px;
+    
+}
+input{
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fff5b0; 
+    font-size: 1em;
+    background: #a29750;
+    border: none;
+    cursor: pointer;
+
+}
+span.endereco > a{
+    color:#a29750 ;
+}
+a:hover{
+    background: #fff5b0;
+}
+
+nav{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+
+
+
+
 
 
 img.logoCasaChale{
