@@ -90,17 +90,14 @@ nav{
     margin-left: 100px;
 }
 
-
-
-
-
-
-
 img.logoCasaChale{
     position: relative;
     transform: translateY(15px);
     margin-left: 15px;
 
 
+}
+ul.menu{
+    padding: 5px;
 }
 
