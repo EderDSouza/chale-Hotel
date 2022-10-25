@@ -1,103 +1,180 @@
 @charset "UTF-8";
 
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background:#fff url(../image/bg.png);
-    margin: 15px;
+body {
+  background: #fff url(../image/bg.png);
+  margin: 15px;
+  font-family: "Lora", serif;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: #6e672c;
+  font-size: 0.8em;
 }
 
-header{
-    width: 100%;
-    background: #ede9cc;
-    min-width: 750px;
-    max-width: 1180px;
-}
-    
-
-div#containerTopo{
-    position: relative;
-    background: #dbcd87;
-    height: 15.4em;
-    min-height: 250px;
-    margin: 0 auto;
-    min-width: 750px;
-    max-width: 1180px;
+header {
+  background: #ede9cc;
+  min-width: 750px;
+  max-width: 1180px;
 }
 
-div#divTopoPrincipal{
+div#containerTopo {
+  position: relative;
+  background: #dbcd87;
+  height: 15.4em;
+  min-height: 250px;
+  margin: 0 auto;
+  min-width: 750px;
+  max-width: 1180px;
+}
+
+div#divTopoPrincipal {
   position: absolute;
   width: 100%;
   height: 250px;
   top: 0;
   left: 0;
   background: url(../image/topo-imagem-principal.png) no-repeat;
-
 }
-div#topoMenuLateral{
-    position: absolute;
-    width: 450px;
-    height: 250px;
-    top: 0;
-    right: 0;
-    background: url(../image/topo-imagem-lateral.png) no-repeat;
-    
-    
+div#topoMenuLateral {
+  position: absolute;
+  width: 450px;
+  height: 250px;
+  top: 0;
+  right: 0;
+  background: url(../image/topo-imagem-lateral.png) no-repeat;
 }
 
-div#localizacao{
-    text-align: center;
-    margin-top: 25px;
-    border-top: 1px solid #b5ab56;
-    border-bottom: 1px solid #b5ab56;
-    width: 85%;
-    margin-left: 40px;
-    padding: 10px;
+div#localizacao {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #b5ab56;
+  border-bottom: 1px solid #b5ab56;
+  width: 85%;
+  margin-left: 40px;
+  padding: 10px;
 }
-div#localizacao > span{
-    font-size: 0.9em;
-    padding: 10px;
-    
+div#localizacao > span {
+  font-size: 0.9em;
+  padding: 10px;
 }
-input{
-    padding-right: 10px;
-    padding-left: 10px;
-    color: #fff5b0; 
-    font-size: 1em;
-    background: #a29750;
-    border: none;
-    cursor: pointer;
-
+input {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #fff5b0;
+  font-size: 1em;
+  background: #a29750;
+  border: none;
+  cursor: pointer;
 }
-span.endereco > a{
-    color:#a29750 ;
+span.endereco > a {
+  color: #a29750;
 }
-a:hover{
-    background: #fff5b0;
+a:hover {
+  background: #fff5b0;
 }
 
-nav{
-    margin-top: 60px;
-    margin-left: 100px;
+nav {
+  margin-top: 10px;
+  margin-left: 90px;
+  float: left;
 }
 
-img.logoCasaChale{
-    position: relative;
-    transform: translateY(15px);
-    margin-left: 15px;
-
-
-}
-ul.menu{
-    padding: 5px;
+img.logoCasaChale {
+  position: relative;
+  transform: translateY(15px);
+  margin-left: 15px;
 }
 
+ul.menu li {
+  padding: 8px;
+  width: 112px;
+}
+
+div#logoLateralMensagem {
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* CSS Main   
+----------------------------*/
+
+main {
+  background: url(../image/bg-container.png) top center repeat-y;
+  max-width: 1180px;
+  min-width: 750px;
+  position: absolute;
+}
+
+div#containerPrincipal {
+  width: 50%;
+  float: left;
+  padding: 15px 0;
+  background: url(../image/bg-area-principal.png) top left repeat-x;
+}
+
+div#container-area-lateral {
+  width: 50%;
+  float: right;
+  padding: 20px 0;
+  background: url(../image/bg-area-lateral.png) top left repeat-x;
+}
+
+div.area-conteudo {
+  margin: 0 auto;
+  width: 90%;
+}
+
+h2 {
+  padding: 5px 0;
+  color: #7d7640;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+ul#lista-lateral-imagem > li {
+  margin-bottom: 8px;
+  height: 6em;
+  border-bottom: 1px solid #f3efcd;
+}
+
+img.imagemLateral {
+  width: 150px;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  right: 0;
+}
+
+ul#lista-lateral-imagem > li > a {
+  float: right;
+}
+
+ul#lista-lateral-imagem > li > a > h3 {
+  padding: 5px 0;
+  background: url(../image/ornamento.png) right no-repeat;
+  color: #615b2d;
+  font-size: 1.1em;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  background: #fff url(../image/bg-rodape.png) top repeat-x;
+  color: #7d7640;
+  padding: 20px;
+}
