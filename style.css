@@ -171,10 +171,4 @@ ul#lista-lateral-imagem > li > a > h3 {
   font-size: 1.1em;
 }
 
-footer {
-  clear: both;
-  text-align: center;
-  background: #fff url(../image/bg-rodape.png) top repeat-x;
-  color: #7d7640;
-  padding: 20px;
-}
+
