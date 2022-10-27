@@ -8,5 +8,9 @@
 ### Também pratiquei a utilização de imagem no background como divisor de conteúdo.
 #
 link: https://chale-hotel-psi.vercel.app/
-
+#
+#
+<div>
+    <img src="gifChale.gif" width="100%">
+</div>
 
